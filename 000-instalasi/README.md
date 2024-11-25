@@ -53,3 +53,21 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
   </body>
 </html>
 ```
+
+## Menggunakan CDN
+
+- Tambahkan tag skrip Play CDN ke `<head>` file HTML kalian, dan mulai gunakan kelas utilitas Tailwind untuk menata gaya konten kalian.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  </body>
+</html>
+```
