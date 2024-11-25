@@ -13,3 +13,16 @@ npm install -D tailwindcss
 ```sh
 npx tailwindcss init
 ```
+
+- Konfigurasi template path
+
+```json
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
