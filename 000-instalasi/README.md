@@ -16,7 +16,7 @@ npx tailwindcss init
 
 - Konfigurasi template path
 
-```
+```json
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
