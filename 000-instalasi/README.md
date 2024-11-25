@@ -8,9 +8,6 @@ Tailwind CSS bekerja dengan memindai semua file HTML, komponen JavaScript, dan t
 
 ```sh
 npm install -D tailwindcss
-```
-
-```sh
 npx tailwindcss init
 ```
 
