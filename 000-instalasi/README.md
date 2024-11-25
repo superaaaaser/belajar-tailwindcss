@@ -23,3 +23,33 @@ module.exports = {
   plugins: [],
 };
 ```
+
+- Tambahkan `@tailwind` ke CSS utama kalian
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+- Jalankan CLI untuk memindai file template kalian untuk mencari kelas CSS
+
+```sh
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+```
+
+- Tambahkan CSS yang sudah di kompile di dalam `<head>` dan bisa memulai class tailwind di dalam konten kalian
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  </body>
+</html>
+```
